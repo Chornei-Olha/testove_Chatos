@@ -105,7 +105,9 @@ body {
   top: 255px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
+  max-width: 313px;
+  margin-top: 45px;
+  margin-bottom: 96px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -345,6 +347,7 @@ header {
 .dropdown-container {
   display: flex;
   border-radius: 10px;
+  box-shadow: 0 4px 39px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (max-width: 1199px) {
@@ -352,7 +355,8 @@ header {
     flex-direction: column;
     gap: 40px;
     max-width: 100%;
-    margin: 0 auto;
+    margin-top: 65px;
+    padding: 40px 20px;
   }
 }
 
@@ -361,7 +365,6 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    box-shadow: 0 4px 39px rgba(0, 0, 0, 0.15);
     width: 80%;
     margin-top: 32px;
     padding: 24px;

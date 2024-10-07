@@ -37,51 +37,43 @@
         <use class="icon-burger" href="/images/icons/icon-burger.svg"></use>
       </svg>
 
-      <div class="container">
-        <nav class="main-nav">
-          <div class="menu-container" id="menu-container" data-menu>
-            <ul class="site-nav">
-              <li><a href="#" class="link">Головна</a></li>
-              <li><a href="#booking" class="link">Бронювання</a></li>
-              <li><a href="3" class="link">Рейси</a></li>
-              <li><a href="4" class="link">Допомога</a></li>
-            </ul>
+      <nav class="main-nav">
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="site-nav">
+            <li><a href="#" class="link">Головна</a></li>
+            <li><a href="#booking" class="link">Бронювання</a></li>
+            <li><a href="3" class="link">Рейси</a></li>
+            <li><a href="4" class="link">Допомога</a></li>
+          </ul>
 
-            <button type="button" name="Бронюй" class="button" data-modal-open>
-              Бронюй
-            </button>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero-main-title">Перевізники Європи</h1>
-          <h1 class="hero-title-mobile">
-            <span class="title-span">YDC</span> Перевізники<br /><span
-              class="title-span"
-              >Європи</span
-            >
-          </h1>
-          <h3 class="hero-second-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </h3>
-          <button
-            type="button button-mobile"
-            name="Бронюй"
-            class="button"
-            data-modal-open
-          >
+          <button type="button" name="Бронюй" class="button" data-modal-open>
             Бронюй
           </button>
         </div>
-      </section>
+      </nav>
+    </header>
 
-      <section class="toggle-container">
-        <button class="toggle-btn active" id="passengerBtn">Пасажир</button>
-        <button class="toggle-btn" id="carrierBtn">Перевізник</button>
+    <main>
+      <section class="hero">
+        <h1 class="hero-title-desktop">Перевізники Європи</h1>
+        <h1 class="hero-title-mobile">
+          <span class="hero-title-span">YDC</span> Перевізники<br /><span
+            class="hero-title-span"
+            >Європи</span
+          >
+        </h1>
+        <h3 class="hero-title-primary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </h3>
+        <button
+          type="button button-mobile"
+          name="Бронюй"
+          class="button"
+          data-modal-open
+        >
+          Бронюй
+        </button>
       </section>
 
       <img
@@ -89,11 +81,17 @@
         alt="Логотипи"
         class="logo-mobile-big"
       />
-      <!-- <img
+
+      <!-- <svg
         src="./images/mobile/vector_mobile.svg"
         alt="Вектор"
         class="vector"
       /> -->
+
+      <section class="toggle-container">
+        <button class="toggle-btn active" id="passengerBtn">Пасажир</button>
+        <button class="toggle-btn" id="carrierBtn">Перевізник</button>
+      </section>
 
       <section class="dropdown-container" id="booking">
         <div class="dropdown">
@@ -165,90 +163,88 @@
       </section>
 
       <section class="features">
-        <div class="container">
-          <ul class="features-list">
-            <li class="features-item">
-              <h2 class="features-main-text">Наші фішки</h2>
-              <h3 class="features-primary-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </h3>
-              <button class="submit btn">Дізнатись більше</button>
-            </li>
-            <li class="features-item">
-              <div class="features-content">
-                <img
-                  class="features-pic"
-                  width="70"
-                  height="70"
-                  src="./images/laptop/location_laptop.svg"
-                  alt="Доступ до місцезнаходження водія"
-                />
-                <h3 class="features-title">Доступ до місцязнаходження водія</h3>
+        <ul class="features-list">
+          <li class="features-item">
+            <h2 class="features-main-text">Наші фішки</h2>
+            <h3 class="features-primary-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </h3>
+            <button class="submit btn">Дізнатись більше</button>
+          </li>
+          <li class="features-item">
+            <div class="features-content">
+              <img
+                class="features-pic"
+                width="70"
+                height="70"
+                src="./images/laptop/location_laptop.svg"
+                alt="Доступ до місцезнаходження водія"
+              />
+              <h3 class="features-title">Доступ до місцязнаходження водія</h3>
+              <p class="features-text">
+                Слідкуй за актуальною локацією водія та завжди будь в курсі де
+                зараз Твій бус або відправлена Тобою посилка. Ми не Uber, але
+                теж круто!
+              </p>
+            </div>
+          </li>
+          <li class="features-item forMobile">
+            <div class="features-content">
+              <img
+                class="features-pic"
+                width="70"
+                height="70"
+                src="./images/laptop/mobile_laptop.svg"
+                alt="Онлайн бронювання у додатку"
+              />
+              <div class="features-text-content">
+                <h3 class="features-title">Онлайн бронювання у додатку</h3>
                 <p class="features-text">
-                  Слідкуй за актуальною локацією водія та завжди будь в курсі де
-                  зараз Твій бус або відправлена Тобою посилка. Ми не Uber, але
-                  теж круто!
+                  Швидке бронювання онлайн! Забудь про сотні дзвінків перед
+                  поїздкою!
                 </p>
               </div>
-            </li>
-            <li class="features-item forMobile">
-              <div class="features-content">
-                <img
-                  class="features-pic"
-                  width="70"
-                  height="70"
-                  src="./images/laptop/mobile_laptop.svg"
-                  alt="Онлайн бронювання у додатку"
-                />
-                <div class="features-text-content">
-                  <h3 class="features-title">Онлайн бронювання у додатку</h3>
-                  <p class="features-text">
-                    Швидке бронювання онлайн! Забудь про сотні дзвінків перед
-                    поїздкою!
-                  </p>
-                </div>
+            </div>
+          </li>
+          <li class="features-item forMobile">
+            <div class="features-content">
+              <img
+                class="features-pic"
+                width="70"
+                height="70"
+                src="./images/laptop/info_laptop.svg"
+                alt="Статус поїздки"
+              />
+              <div class="features-text-content">
+                <h3 class="features-title">Статус поїздки</h3>
+                <p class="features-text">
+                  Додаток нагадає про поїздку та повідомить тебе, як тільки
+                  водій вирушить в дорогу!
+                </p>
               </div>
-            </li>
-            <li class="features-item forMobile">
-              <div class="features-content">
-                <img
-                  class="features-pic"
-                  width="70"
-                  height="70"
-                  src="./images/laptop/info_laptop.svg"
-                  alt="Статус поїздки"
-                />
-                <div class="features-text-content">
-                  <h3 class="features-title">Статус поїздки</h3>
-                  <p class="features-text">
-                    Додаток нагадає про поїздку та повідомить тебе, як тільки
-                    водій вирушить в дорогу!
-                  </p>
-                </div>
+            </div>
+          </li>
+          <li class="features-item forMobile">
+            <div class="features-content">
+              <img
+                class="features-pic"
+                width="70"
+                height="70"
+                src="./images/laptop/car_laptop.svg"
+                alt="Відстеження поїздок"
+              />
+              <div class="features-text-content">
+                <h3 class="features-title">Відстеження поїздок</h3>
+                <p class="features-text">
+                  Відправив посилку рідним? Відстежуй її у режимі онлайн
+                </p>
               </div>
-            </li>
-            <li class="features-item forMobile">
-              <div class="features-content">
-                <img
-                  class="features-pic"
-                  width="70"
-                  height="70"
-                  src="./images/laptop/car_laptop.svg"
-                  alt="Відстеження поїздок"
-                />
-                <div class="features-text-content">
-                  <h3 class="features-title">Відстеження поїздок</h3>
-                  <p class="features-text">
-                    Відправив посилку рідним? Відстежуй її у режимі онлайн
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
     <script src="./js/button.js"></script>

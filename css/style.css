@@ -241,12 +241,12 @@ header {
 }
 
 @media screen and (max-width: 1199px) {
-  .hero-main-title {
+  .hero-title-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero-main-title {
+  .hero-title-desktop {
     font-size: 58px;
     font-weight: bold;
     color: #fff;
@@ -272,19 +272,19 @@ header {
 }
 
 @media screen and (max-width: 1199px) {
-  .title-span {
+  .hero-title-span {
     font-size: 32px;
     font-weight: bold;
     color: #0d6efd;
   }
 }
 @media screen and (min-width: 1200px) {
-  .title-span {
+  .hero-title-span {
     display: none;
   }
 }
 
-.hero-second-title {
+.hero-title-primary {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -453,6 +453,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0px;
   }
 }
 
@@ -496,20 +497,44 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 15px 10px;
+    min-height: 91px;
   }
 }
 
 .features-title {
-  font-size: 20px;
   font-weight: bold;
-  margin-top: 22px;
+}
+
+@media screen and (max-width: 1199px) {
+  .features-title {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-title {
+    font-size: 20px;
+  }
 }
 
 .features-text {
-  font-size: 16px;
   font-weight: 400;
-  margin-top: 12px;
   color: #656c72;
+}
+
+@media screen and (max-width: 1199px) {
+  .features-text {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-text {
+    margin-top: 12px;
+    font-size: 16px;
+  }
 }
 
 .features-text-content {

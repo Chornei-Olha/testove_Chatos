@@ -99,31 +99,38 @@ body {
   }
 }
 
-.logo-mobile-big {
-  display: block;
-  position: absolute;
-  top: 255px;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 313px;
-  margin-top: 45px;
-  margin-bottom: 96px;
+.logo-container {
+  position: relative;
+  width: 447px;
+  height: auto;
+  top: 0;
 }
 
+.vector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
 @media screen and (min-width: 1200px) {
-  .logo-mobile-big {
+  .vector {
     display: none;
   }
 }
 
-.vector {
-  display: block;
-  width: 100%;
-  top: 236px;
-  position: relative;
+.logo-mobile-big {
+  position: absolute;
+  left: 30%;
+  min-width: 313px;
+  margin-top: 45px;
+  margin-bottom: 96px;
+  max-width: 100%;
 }
+
 @media screen and (min-width: 1200px) {
-  .vector {
+  .logo-mobile-big {
     display: none;
   }
 }
@@ -198,11 +205,6 @@ header {
   }
 }
 
-.button-mobile {
-  top: 0;
-  margin-top: 0;
-}
-
 .submit {
   background-color: #007bff;
   color: white;
@@ -233,19 +235,28 @@ header {
   background-color: #0056b3;
 }
 
+.button-mobile {
+}
+
 .btn {
   padding: 13px 28px;
 }
 
-.hero {
-  position: relative;
-  z-index: 1;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  margin-left: 5vw;
+@media screen and (max-width: 1199px) {
+  .hero {
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    position: relative;
+    z-index: 1;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -270,6 +281,7 @@ header {
     color: #222222;
     display: block;
     text-align: left;
+    margin-top: 109px;
   }
 }
 
@@ -292,13 +304,21 @@ header {
   }
 }
 
-.hero-title-primary {
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-  margin-top: 12px;
-  margin-bottom: 52px;
-  max-width: 628px;
+@media screen and (max-width: 1199px) {
+  .hero-title-primary {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title-primary {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 12px;
+    margin-bottom: 52px;
+    max-width: 628px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -355,7 +375,7 @@ header {
     flex-direction: column;
     gap: 40px;
     max-width: 100%;
-    margin-top: 65px;
+    margin-top: 325px;
     padding: 40px 20px;
   }
 }

@@ -170,7 +170,6 @@ header {
 }
 .button {
   border-radius: 4px;
-  padding: 15px 65px;
   font-size: 20px;
   font-weight: 400;
   border: none;
@@ -185,13 +184,15 @@ header {
   .button {
     background-color: #0d6efd;
     color: #fff;
-    margin-top: 32px;
+    padding: 15px 42px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .button {
     color: #0d6efd;
+    padding: 15px 65px;
+    max-width: 204px;
   }
 }
 
@@ -199,6 +200,7 @@ header {
   top: 0;
   margin-top: 0;
 }
+
 .submit {
   background-color: #007bff;
   color: white;
@@ -211,6 +213,7 @@ header {
   .submit {
     padding: 15px 110px;
     border-radius: 4px;
+    max-width: 100%;
   }
 }
 
@@ -546,9 +549,28 @@ header {
     flex-direction: row;
     align-items: center;
   }
+}
+@media screen and (max-width: 1199px) {
+  .features-pic-mobile {
+    display: block;
+    margin-right: 9px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-pic-mobile {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 1199px) {
   .features-pic {
-    margin-right: 10px;
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    .features-pic {
+      display: block;
+      margin-right: 10px;
+    }
   }
 
   .features-text-content {
@@ -557,12 +579,12 @@ header {
 }
 
 .YDC {
-  padding: 20px;
-  width: 100%;
+  max-width: 100vw;
   border: none;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .img-YDC {

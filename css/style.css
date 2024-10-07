@@ -99,6 +99,19 @@ body {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .icon-burger {
+    margin-top: 20px;
+    margin-left: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-burger {
+    display: none;
+  }
+}
+
 .logo-container {
   position: relative;
   max-width: 100%;

@@ -101,16 +101,16 @@ body {
 
 .logo-container {
   position: relative;
-  width: 447px;
+  max-width: 100%;
   height: auto;
   top: 0;
+  margin: 0 auto;
 }
 
 .vector {
   position: absolute;
   top: 0;
   left: 0;
-  width: 352px;
   max-width: 100%;
   height: auto;
   z-index: 1;
@@ -124,7 +124,6 @@ body {
 .logo-mobile-big {
   position: absolute;
   left: 8%;
-  width: 313px;
   margin-top: 45px;
   margin-bottom: 96px;
   max-width: 100%;

@@ -293,7 +293,7 @@ header {
   color: #fff;
   margin-top: 12px;
   margin-bottom: 52px;
-  width: 628px;
+  max-width: 628px;
 }
 
 @media screen and (max-width: 1199px) {
